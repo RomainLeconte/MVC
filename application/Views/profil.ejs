@@ -1,0 +1,16 @@
+
+      
+        <form class="form-signin" action="/user/update" method="PUT">
+            <h2 class="form-signin-heading">Update Profil</h2>
+            <label for="inputNom" class="sr-only">Nom</label>
+            <input value="<%= (User.nom) ? User.nom : '' %>" name="nom" type="text" id="inputNom" class="form-control" placeholder="Nom" required autofocus>
+            <label for="inputPrenom" class="sr-only">Prenom</label>
+            <input value="<%= (User.prenom) ? User.prenom : '' %>"  name="prenom" type="text" id="inputPrenom" class="form-control" placeholder="Prenom" required>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input value="<%= (User.email) ? User.email : '' %>"  name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
+            <label for="inputNewPassword" class="sr-only">Nouveau Password</label>
+            <input value=""  name="newPassword" type="password" id="inputNewPassword" class="form-control" placeholder="Password">
+            <label for="inputOldPassword" class="sr-only">Ancien Password</label>
+            <input value=""  name="oldPassword" type="password" id="inputOldPassword" class="form-control" placeholder="Password">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>

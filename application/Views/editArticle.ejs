@@ -1,0 +1,10 @@
+<div>
+    <form class="form-signin" method="PUT" action="/article">
+            <label for="inputTitle" class="sr-only">Titre</label>
+            <input value="{{article.title}}" type="text" id="inputTitle" name="title" class="form-control" required autofocus>
+            <label for="inputContent" class="sr-only">Content</label>
+            <textarea value="" name="content" id="inputContent">{{article.content}}</textarea>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+    </form>
+</div>
+

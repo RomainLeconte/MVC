@@ -1,0 +1,12 @@
+
+      
+        <form class="form-signin" action="/user/update" method="PUT">
+            <h2 class="form-signin-heading">Ask new password</h2>
+            <label for="inputNom" class="sr-only">Nom</label>
+            <input value="<%= (User.nom) ? User.nom : '' %>" name="nom" type="text" id="inputNom" class="form-control" placeholder="Nom" required autofocus>
+            <label for="inputPrenom" class="sr-only">Prenom</label>
+            <input value="<%= (User.prenom) ? User.prenom : '' %>"  name="prenom" type="text" id="inputPrenom" class="form-control" placeholder="Prenom" required>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input value="<%= (User.email) ? User.email : '' %>"  name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Ask</button>
+        </form>

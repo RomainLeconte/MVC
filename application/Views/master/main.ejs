@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <base href="/">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/jquery.min.js" defer ></script>
+    <script type="text/javascript" src="js/popper.min.js" defer></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="js/socket.io.js" defer></script>
+
+    <script type="text/javascript" src="js/application.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Header:start -->
+    <%- include ../parts/header.ejs %>
+    <!-- Header:stop -->
+    
+    <div class="container">
+      <%- include('../' + page) %>
+    </div>
+
+    <!-- Footer:start -->
+    <%- include ../parts/footer.ejs %>
+    <!-- Footer:stop -->
+
+  </body>
+</html>

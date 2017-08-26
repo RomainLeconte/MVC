@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "application/index.js",
+  "scripts": {
+    "start": "node application/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "installer": "0.0.1",
+    "json-fn": "^1.1.1",
+    "mongoose": "^4.11.7",
+    "socket.io": "^2.0.3"
+  }
+}
